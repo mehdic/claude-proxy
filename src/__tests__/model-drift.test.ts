@@ -32,6 +32,7 @@ import { extractModel } from "../adapter/openai-to-cli.js";
 
 // From src/index.ts AVAILABLE_MODELS
 const AVAILABLE_MODEL_IDS = [
+  "claude-opus-4-8",
   "claude-opus-4-7",
   "claude-opus-4-6",
   "claude-sonnet-4-6",
@@ -42,6 +43,7 @@ const AVAILABLE_MODEL_IDS = [
 
 // From src/server/routes.ts handleModels()
 const HANDLE_MODELS_IDS = [
+  "claude-opus-4-8",
   "claude-opus-4-7",
   "claude-opus-4-6",
   "claude-sonnet-4-6",
@@ -53,7 +55,7 @@ const HANDLE_MODELS_IDS = [
 
 // From src/server/routes.ts KNOWN_MODEL_LABELS
 const KNOWN_MODEL_LABELS = [
-  "claude-opus-4-7", "claude-opus-4-6", "claude-opus-4",
+  "claude-opus-4-8", "claude-opus-4-7", "claude-opus-4-6", "claude-opus-4",
   "claude-sonnet-4-6", "claude-sonnet-4",
   "claude-haiku-4-5-20251001", "claude-haiku-4-5", "claude-haiku-4",
 ];
@@ -63,6 +65,7 @@ const MODEL_MAP_BARE_IDS = [
   "claude-opus-4",
   "claude-sonnet-4",
   "claude-haiku-4",
+  "claude-opus-4-8",
   "claude-opus-4-7",
   "claude-opus-4-6",
   "claude-sonnet-4-6",

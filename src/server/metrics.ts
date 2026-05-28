@@ -106,6 +106,7 @@ function canonicalizeMetricModel(model: string): string {
   if (stripped === "opus") return "claude-opus-4-6";
   if (stripped === "sonnet") return "claude-sonnet-4-6";
   if (stripped === "haiku") return "claude-haiku-4-5";
+  if (stripped.startsWith("claude-opus-4-8")) return "claude-opus-4-8";
   if (stripped.startsWith("claude-opus-4-7")) return "claude-opus-4-7";
   if (stripped.startsWith("claude-opus-4-6")) return "claude-opus-4-6";
   if (stripped.startsWith("claude-opus-4")) return "claude-opus-4";

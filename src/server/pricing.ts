@@ -55,6 +55,14 @@ const FALLBACK_PRICING: PricingBook = {
   updatedAt: DEFAULT_UPDATED_AT,
   source: "static fallback from Anthropic public pricing; refresh with scripts/update-pricing.mjs",
   models: {
+    "claude-opus-4-8": {
+      inputPer1M: 5,
+      cacheCreationInputPer1M: 6.25,
+      cachedInputPer1M: 0.5,
+      outputPer1M: 25,
+      source: "Anthropic Claude Opus 4.8 public product/pricing page",
+      updatedAt: "2026-05-28",
+    },
     "claude-opus-4-7": {
       inputPer1M: 5,
       cacheCreationInputPer1M: 6.25,
@@ -194,6 +202,7 @@ export function normalizeModel(model: string): string {
   if (stripped === "opus") return "claude-opus-4-6";
   if (stripped === "sonnet") return "claude-sonnet-4-6";
   if (stripped === "haiku") return "claude-haiku-4-5";
+  if (/^claude-opus-4-8/.test(stripped)) return "claude-opus-4-8";
   if (/^claude-opus-4-7/.test(stripped)) return "claude-opus-4-7";
   if (/^claude-opus-4-6/.test(stripped)) return "claude-opus-4-6";
   if (/^claude-opus-4/.test(stripped)) return "claude-opus-4";

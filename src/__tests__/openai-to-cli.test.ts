@@ -12,7 +12,7 @@ test("extractModel strips claude-code-cli provider prefix", () => {
 });
 
 test("extractModel accepts claude-proxy provider prefix", () => {
-  assert.equal(extractModel("claude-proxy/claude-opus-4-7"), "claude-opus-4-7");
+  assert.equal(extractModel("claude-proxy/claude-opus-4-8"), "claude-opus-4-8");
 });
 
 test("messagesToPrompt joins text content parts with newlines", () => {

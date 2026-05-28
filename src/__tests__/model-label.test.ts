@@ -11,7 +11,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 
 const KNOWN_MODEL_LABELS = new Set([
-  "claude-opus-4-7", "claude-opus-4-6", "claude-opus-4",
+  "claude-opus-4-8", "claude-opus-4-7", "claude-opus-4-6", "claude-opus-4",
   "claude-sonnet-4-6", "claude-sonnet-4",
   "claude-haiku-4-5-20251001", "claude-haiku-4-5", "claude-haiku-4",
 ]);
@@ -22,7 +22,7 @@ function canonicalizeModelLabel(model: string | undefined): string {
 }
 
 test("strips claude-proxy/ provider prefix", () => {
-  assert.equal(canonicalizeModelLabel("claude-proxy/claude-opus-4-7"), "claude-opus-4-7");
+  assert.equal(canonicalizeModelLabel("claude-proxy/claude-opus-4-8"), "claude-opus-4-8");
 });
 
 test("strips claude-code-cli/ legacy provider prefix", () => {

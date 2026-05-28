@@ -19,7 +19,8 @@ const MODEL_MAP: Record<string, ClaudeModel> = {
   "claude-opus-4": "opus",
   "claude-sonnet-4": "sonnet",
   "claude-haiku-4": "haiku",
-  // 4.5/4.6/4.7 generation (exact ids passed straight through to claude CLI's --model)
+  // 4.5+ generation (exact ids passed straight through to claude CLI's --model)
+  "claude-opus-4-8": "claude-opus-4-8",
   "claude-opus-4-7": "claude-opus-4-7",
   "claude-opus-4-6": "claude-opus-4-6",
   "claude-sonnet-4-6": "claude-sonnet-4-6",
@@ -30,6 +31,7 @@ const MODEL_MAP: Record<string, ClaudeModel> = {
   "claude-code-cli/claude-opus-4": "opus",
   "claude-code-cli/claude-sonnet-4": "sonnet",
   "claude-code-cli/claude-haiku-4": "haiku",
+  "claude-code-cli/claude-opus-4-8": "claude-opus-4-8",
   "claude-code-cli/claude-opus-4-7": "claude-opus-4-7",
   "claude-code-cli/claude-opus-4-6": "claude-opus-4-6",
   "claude-code-cli/claude-sonnet-4-6": "claude-sonnet-4-6",
@@ -40,6 +42,7 @@ const MODEL_MAP: Record<string, ClaudeModel> = {
   "claude-proxy/claude-opus-4": "opus",
   "claude-proxy/claude-sonnet-4": "sonnet",
   "claude-proxy/claude-haiku-4": "haiku",
+  "claude-proxy/claude-opus-4-8": "claude-opus-4-8",
   "claude-proxy/claude-opus-4-7": "claude-opus-4-7",
   "claude-proxy/claude-opus-4-6": "claude-opus-4-6",
   "claude-proxy/claude-sonnet-4-6": "claude-sonnet-4-6",
